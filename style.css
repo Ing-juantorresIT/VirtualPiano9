@@ -1,0 +1,69 @@
+:root {
+  background-color: black;
+}
+
+.container {
+  margin: 5% auto;
+  width: 370px;
+  min-width: 10%;
+  max-width: 80%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+
+/*STYLE - KEYS*/
+
+.white-keys kbd {
+  margin: auto -1%;
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 3px solid #919191;
+  padding-top: 220px;
+}
+/* OJO CODIGO PARA PONER LAS RAYAS NEGRAS DE LAS TECLAS */
+
+.black-keys kbd {
+  margin-left: 6px;
+  margin-right: 6px;
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+  background-color: black;
+  border: 3px solid #919191;
+  padding-top: 109px;
+  color: white;
+  /* OJO EL LEFT SERIA 31px por que se suman los 6px de borde mas los 25px de la caja que es la mitad */
+
+  position: relative;
+  bottom: 276px; /*la suma de 220px (padding-top) + 50px (height)+ 6px(border) */
+  left: 28px;
+  right: 28px;
+}
+
+.radius_left {
+  border-bottom-left-radius: 25px;
+}
+
+.radius_right {
+  border-bottom-right-radius: 25px;
+}
+
+/* ESTO ES UNA PRUEBA DE COMO SE */
+
+.keyUp {
+  background-color: rgb(86, 180, 86) !important;
+  border-bottom: 3px solid greenyellow !important;
+  color: white !important;
+}
