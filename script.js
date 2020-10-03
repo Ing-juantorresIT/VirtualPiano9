@@ -42,7 +42,7 @@ document.addEventListener("keypress", function (event) {
   if (keys_code.includes(event.key.toUpperCase())) {
     //
 
-    let x = new Audio(`resource/${event.key.toUpperCase().toLowerCase()}.mp3`); // crear un objeto de audio,
+    let x = new Audio(`resource/${event.key.toUpperCase()}.mp3`); // crear un objeto de audio,
 
     keyPo.classList.add("keyUp"); //Se le pone la clase KeyUp a la letra correcta por que se dertimon gracias a la posicion dentro del array
     return x.play(); //Reproduce el sonido de las letras.
